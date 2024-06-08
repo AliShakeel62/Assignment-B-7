@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.navbar{
+    background-color: #333;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.c-btn {
+    border-radius: 12vh;
+    color: black;
+    border-color:white;
+    border-style: solid;
+    display: none;
+    height: 10vh;
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    position: absolute;
+    bottom: 1vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card:hover .card-body{
+display: block;
+}
+.card:hover .c-btn{
+  display: block;
   }
+.card-div{
+    width: 100%;
+}
+.card{
+    position: relative;
+    height: 112vh;
+    width: auto;
+}
+.card img{
+  object-fit: cover;
+  height: auto;
+}
+.card:hover .card-body{
+   transform: rotateY(360deg);
+    display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-body{
+    position: absolute;
+    display: block;
+    background: black;
+    width: 11.7vw;
+    height:29.6vh;
+    right: 0.01vw;
+    opacity:0.3;
+    visibility: hidden;
+    transition: opacity 1.5s, visibility 1.5s;
+display: none;
 }
-
-.App-link {
-  color: #61dafb;
+.card:hover .card-body {
+    visibility: visible;
+    opacity: 0.5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Slider {
+    max-width: 60%;
+    margin: 0 auto; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  .Slider  img{
+    height: 50vh;  
+    width: auto;
+    object-fit: cover;
   }
-}
+  
+  @media (min-width: 768px) {
+    .Slider {
+      max-width: 660px;
+      object-fit: cover;
+    }
+  
+    .Slider .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-body{
+      position: absolute;
+      display: block;
+      background: black;
+      width: 20.6vw;
+      height:34.3vh;
+      right: 0.2vw;
+      opacity:0.3;
+      visibility: hidden;
+      transition: opacity 1.5s, visibility 1.5s;
+  display: none;
+  }
+  
+  }
+  @media (max-width: 576px) {
+    .card-body{
+      position: absolute;
+      display: block;
+      background: black;
+      width: 25.6vw;
+      height:34.3vh;
+      right: 0.2vw;
+      opacity:0.3;
+      visibility: hidden;
+      transition: opacity 1.5s, visibility 1.5s;
+  display: none;
+  }
+  
+  }
+  @media (max-width: 432px) {
+    .card-body{
+      position: absolute;
+      display: block;
+      background: black;
+      width: 34.3vw;
+      height:34.3vh;
+      right: 0.2vw;
+      opacity:0.3;
+      visibility: hidden;
+      transition: opacity 1.5s, visibility 1.5s;
+  display: none;
+  }
+  
+  }
+  @media (max-width: 339px) {
+    .card-body{
+      position: absolute;
+      display: block;
+      background: black;
+      width: 46.6vw;
+      height:34.3vh;
+      right: 0.2vw;
+      opacity:0.3;
+      visibility: hidden;
+      transition: opacity 1.5s, visibility 1.5s;
+  display: none;
+  }
+  
+  }
